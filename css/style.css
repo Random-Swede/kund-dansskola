@@ -11,9 +11,64 @@
 h1{
     font-family: header-font;
     font-size:100px
+}
 
+
+#wrapper{
+    display: grid;
+    width: 100vw;
+    height: 120vh;
+    grid-template-areas: 
+    'hdr hdr'
+    'img img'
+    'nav nav'
+    'art art'
+    'main asd'
+    'fot fot'
+    ;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 10% 1fr 1fr 4fr 1fr;
 
 }
+
 header{
-    size: 100px
+    
+    grid-area: hdr;
+    background-color: aqua;
+}
+
+#topimg{
+ 
+    grid-area: img;
+    background-color: red;
+}
+
+nav{
+
+    grid-area: nav;
+    background-color:rgb(0, 255, 102) ;
+}
+
+article{
+
+    grid-area: art;
+    background-color: crimson;
+}
+
+main{
+
+    grid-area: main;
+    background-color: darkorange;
+}
+
+aside{
+
+    grid-area: asd;
+    background-color: aquamarine;
+}
+
+footer{
+
+    grid-area: fot;
+    background-color: blueviolet;
 }
