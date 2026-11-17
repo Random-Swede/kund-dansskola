@@ -1,1 +1,19 @@
 /* Här skrivs all din CSS */
+@font-face {
+    font-family: header-font;
+    src: url(header-font.ttf);
+    src: url(header-font.eot?#iefix) format('embedded-opentype'),
+     url(header-font.woff) format('woff'), 
+     url(header-font.ttf)  format('truetype'),
+     url(header-font.svg#svgFontName) format('svg');
+}
+
+h1{
+    font-family: header-font;
+    font-size:100px
+
+
+}
+header{
+    size: 100px
+}
